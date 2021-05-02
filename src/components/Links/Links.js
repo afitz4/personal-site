@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Links.scss';
 import linkedin from '../../image/linkedin.png'
 import git from '../../image/git.png'
@@ -14,8 +14,8 @@ function Links() {
   ]
   const links = [];
 
-  for (const [_, value] of linkMap.entries()) {
-    links.push(<Link href={value.href} src={value.src} />)
+  for (const link of linkMap) {
+    links.push(<Link href={link.href} src={link.src} />)
   }
 
   return (
