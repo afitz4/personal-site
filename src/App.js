@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import Interests from './components/Interests/Interests.js'
 import Links from './components/Links/Links.js'
 
